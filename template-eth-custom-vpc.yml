@@ -175,6 +175,8 @@ Resources:
         LaunchTemplateSpecification:
           LaunchTemplateId: !Ref LaunchTemplateCudaARM64
           Version: !GetAtt LaunchTemplateCudaARM64.LatestVersionNumber
+        _ExcludeInRegions:
+        - ap-northeast-1
       - InstanceType: g5.xlarge
         WeightedCapacity: "56"
       - InstanceType: g5.24xlarge
